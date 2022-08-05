@@ -1,0 +1,50 @@
+.social ul {
+    position: relative;
+    display: flex;
+    z-index: 2;
+    flex-wrap: wrap;
+}
+.social ul li {
+    position: relative;
+    list-style: none;
+    margin-right: 10px;
+}
+.social ul li a {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 1.5em;
+    text-decoration: none;
+    color: white;
+    box-shadow: 0 5px 45px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: 0.3s;
+    overflow: hidden;
+}
+.social ul li a svg {
+    fill: white;
+    width: 25px;
+}
+.social ul li:hover a {
+    transform: translatey(-10px);
+}
+.social ul li a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5);
+    transform: skewX(45deg) translatex(100px);
+    transition: 0.4s;
+}
+.social ul li:hover a::before {
+    transform: skewX(45deg) translatex(-150px);
+}

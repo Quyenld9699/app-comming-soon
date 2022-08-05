@@ -1,0 +1,31 @@
+.divisor {
+    width: 100%;
+    max-width: 420px;
+    height: 2px;
+    background: white;
+    margin: 10px auto 10px auto;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 0 6px 1px #00e4ff;
+    z-index: 1;
+    &::before {
+        content: '';
+        position: absolute;
+        height: 5px;
+        width: 5px;
+        top: -2px;
+        left: 50%;
+        background: inherit;
+        box-shadow: 0 0 10px 1px #00e4ff;
+        transform: rotate(45deg);
+        z-index: 0;
+    }
+}
+
+.center_vertical {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}

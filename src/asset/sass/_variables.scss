@@ -1,0 +1,11 @@
+// declare variable
+$primary_color: rgb(32, 101, 209);
+$background_color: rgba($primary_color, 0.08);
+
+$sidebar_width: 280px;
+$header_height: 56px;
+
+$sidebar_Zindex: 1000;
+$header_Zindex: $sidebar_Zindex - 1;
+
+$box_shadow: rgb(145 158 171 / 20%) 0px 0px 2px 0px, rgb(145 158 171 / 12%) 0px 12px 24px -4px;
